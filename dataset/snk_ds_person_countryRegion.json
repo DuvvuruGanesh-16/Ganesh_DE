@@ -1,0 +1,30 @@
+{
+	"name": "snk_ds_person_countryRegion",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lmk_azuresql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "CountryRegionCode",
+				"type": "varchar"
+			},
+			{
+				"name": "Name",
+				"type": "varchar"
+			},
+			{
+				"name": "ModifiedDate",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Person_CountryRegion"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

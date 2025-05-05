@@ -1,0 +1,33 @@
+{
+	"name": "reverse_copydata_2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lnk_adls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "data",
+				"fileSystem": "ganesh-container-dev"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"CountryRegionCode": {
+					"type": "string"
+				},
+				"Name": {
+					"type": "string"
+				},
+				"ModifiedDate": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

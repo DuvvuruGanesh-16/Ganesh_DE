@@ -1,0 +1,9 @@
+{
+	"name": "df-ganesh-dev",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "40c72b2c-d234-4ce1-a6a3-c8dbc3957cc6",
+		"tenantId": "c6432ef9-2257-46d1-8b41-3fe8d7d401cf"
+	}
+}

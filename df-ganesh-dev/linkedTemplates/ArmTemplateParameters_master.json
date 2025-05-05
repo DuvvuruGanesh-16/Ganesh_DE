@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "df-ganesh-dev"
+		},
+		"SqlServer1_password": {
+			"value": ""
+		},
+		"lmk_azuresql_password": {
+			"value": ""
+		},
+		"lnk_adls_accountKey": {
+			"value": ""
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "REDDY_GARU"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "AdventureWorks2022"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "sa"
+		},
+		"lmk_azuresql_properties_typeProperties_server": {
+			"value": "db-server-ganesh.database.windows.net"
+		},
+		"lmk_azuresql_properties_typeProperties_database": {
+			"value": "db_ganesh"
+		},
+		"lmk_azuresql_properties_typeProperties_userName": {
+			"value": "admin_ganesh"
+		},
+		"lnk_adls_properties_typeProperties_url": {
+			"value": "https://datalackganeshdev1.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}

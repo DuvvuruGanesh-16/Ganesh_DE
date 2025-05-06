@@ -1,0 +1,21 @@
+{
+	"name": "lnk_selfhost",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "REDDY_GARU",
+			"database": "AdventureWorks2022",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "sa",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI2OWI1ZTk2MC01ZjJhLTQxMzEtOGFjNS0xYjJlNjU5NDJkYTAiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "ir-selfhosted1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

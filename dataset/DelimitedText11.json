@@ -2,7 +2,7 @@
 	"name": "DelimitedText11",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "lnk_adls",
+			"referenceName": "lnk_adls1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "ADVworks_AllFlies",
+				"folderPath": "ADF_68files",
 				"fileSystem": "ganesh-container-dev"
 			},
 			"columnDelimiter": ",",

@@ -92,13 +92,7 @@
 							"inputs": [
 								{
 									"referenceName": "DelimitedText3",
-									"type": "DatasetReference",
-									"parameters": {
-										"x": {
-											"value": "@item().name",
-											"type": "Expression"
-										}
-									}
+									"type": "DatasetReference"
 								}
 							],
 							"outputs": [

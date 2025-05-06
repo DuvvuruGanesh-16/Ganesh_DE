@@ -2,24 +2,16 @@
 	"name": "DelimitedText4",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "lnk_adls",
+			"referenceName": "lnk_adls1",
 			"type": "LinkedServiceReference"
-		},
-		"parameters": {
-			"y": {
-				"type": "string"
-			}
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": {
-					"value": "@dataset().y",
-					"type": "Expression"
-				},
-				"folderPath": "data/lookup_files",
+				"fileName": "Person_BusinessEntityAddress_503.csv",
+				"folderPath": "persons_files.csv",
 				"fileSystem": "ganesh-container-dev"
 			},
 			"columnDelimiter": "|",

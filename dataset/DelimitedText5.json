@@ -2,7 +2,7 @@
 	"name": "DelimitedText5",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "lnk_adls",
+			"referenceName": "lnk_adls1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "data1/selfhosted_single_table",
+				"folderPath": "persons_files.csv",
 				"fileSystem": "ganesh-container-dev"
 			},
 			"columnDelimiter": "|",

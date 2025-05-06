@@ -2,11 +2,11 @@
 	"name": "DelimitedText6",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "lnk_adls",
+			"referenceName": "lnk_adls1",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"y": {
+			"x": {
 				"type": "string"
 			}
 		},
@@ -15,10 +15,14 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "Data3/adworks_tables_to_files",
+				"fileName": {
+					"value": "@dataset().x",
+					"type": "Expression"
+				},
+				"folderPath": "persons_files.csv",
 				"fileSystem": "ganesh-container-dev"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": "|",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""

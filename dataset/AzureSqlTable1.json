@@ -2,28 +2,15 @@
 	"name": "AzureSqlTable1",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "lmk_azuresql",
+			"referenceName": "lnk_Azuresql1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
-		"schema": [
-			{
-				"name": "CountryRegionCode",
-				"type": "varchar"
-			},
-			{
-				"name": "Name",
-				"type": "varchar"
-			},
-			{
-				"name": "ModifiedDate",
-				"type": "nvarchar"
-			}
-		],
+		"schema": [],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "Person_CountryRegion"
+			"table": "Person_Address"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"

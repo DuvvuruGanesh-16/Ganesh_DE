@@ -102,8 +102,8 @@
 									"referenceName": "DelimitedText6",
 									"type": "DatasetReference",
 									"parameters": {
-										"y": {
-											"value": "@concat(item().table_name,'.csv')",
+										"x": {
+											"value": "@item().name",
 											"type": "Expression"
 										}
 									}

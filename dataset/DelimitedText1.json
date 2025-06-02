@@ -2,7 +2,7 @@
 	"name": "DelimitedText1",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "lnk_adls1",
+			"referenceName": "lnk_adls",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -10,16 +10,21 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "Person_Address_001.csv",
-				"folderPath": "persons_files.csv",
-				"fileSystem": "ganesh-container-dev"
+				"fileName": "lastfile.ctl",
+				"folderPath": "demo",
+				"fileSystem": "ganesh-container-123"
 			},
-			"columnDelimiter": "|",
+			"columnDelimiter": ",",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "files have been copied",
+				"type": "String"
+			}
+		]
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }

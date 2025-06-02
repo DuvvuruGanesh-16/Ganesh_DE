@@ -1,0 +1,9 @@
+{
+	"name": "df-new-ganesh",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4c92839b-1de4-4816-ae86-8bf2e50e3fa7",
+		"tenantId": "3ae5a98a-d12e-4903-b51c-d3a6bb8fd608"
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"name": "lnk_parameters_azuresql",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"parameters": {
+			"domain_name": {
+				"type": "string",
+				"defaultValue": "db-server-ganesh1.database.windows.net"
+			},
+			"database_name": {
+				"type": "string",
+				"defaultValue": "db_ganesh"
+			},
+			"user_name": {
+				"type": "string",
+				"defaultValue": "admin-ganesh"
+			},
+			"password": {
+				"type": "string",
+				"defaultValue": "123abcABC"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "@{linkedService().domain_name}",
+			"database": "@{linkedService().database_name}",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "@{linkedService().user_name}",
+			"password": "@{linkedService().password}"
+		}
+	}
+}

@@ -2,7 +2,7 @@
 	"name": "DelimitedText6",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "lnk_adls1",
+			"referenceName": "lnk_adls",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
@@ -19,15 +19,40 @@
 					"value": "@dataset().x",
 					"type": "Expression"
 				},
-				"folderPath": "persons_files.csv",
-				"fileSystem": "ganesh-container-dev"
+				"folderPath": "personfiles",
+				"fileSystem": "ganesh-container-123"
 			},
-			"columnDelimiter": "|",
+			"columnDelimiter": ",",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "StudentID",
+				"type": "String"
+			},
+			{
+				"name": "FirstName",
+				"type": "String"
+			},
+			{
+				"name": "LastName",
+				"type": "String"
+			},
+			{
+				"name": "DateOfBirth",
+				"type": "String"
+			},
+			{
+				"name": "Gender",
+				"type": "String"
+			},
+			{
+				"name": "EnrollmentDate",
+				"type": "String"
+			}
+		]
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }

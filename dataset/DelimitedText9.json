@@ -5,29 +5,25 @@
 			"referenceName": "lnk_adls",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"x": {
-				"type": "string"
-			}
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": {
-					"value": "@dataset().x",
-					"type": "Expression"
-				},
-				"folderPath": "data",
-				"fileSystem": "ganesh-container-dev"
+				"folderPath": "person files 1",
+				"fileSystem": "ganesh-container-123"
 			},
-			"columnDelimiter": "|",
+			"columnDelimiter": ",",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "BusinessEntityID|AddressID|AddressTypeID|rowguid|ModifiedDate",
+				"type": "String"
+			}
+		]
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }

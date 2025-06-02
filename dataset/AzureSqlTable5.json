@@ -2,12 +2,22 @@
 	"name": "AzureSqlTable5",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "lmk_azuresql",
-			"type": "LinkedServiceReference"
+			"referenceName": "lnk_parameters_azuresql",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"domain_name": "db-server-ganesh1.database.windows.net",
+				"database_name": "no brain",
+				"user_name": "admin-ganesh",
+				"password": "123abcABC"
+			}
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
-		"schema": []
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "HumanResources_EmployeeDepartmentHistory"
+		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }

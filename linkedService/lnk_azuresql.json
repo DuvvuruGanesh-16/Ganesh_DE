@@ -1,0 +1,17 @@
+{
+	"name": "lnk_azuresql",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "db-server-ganesh1.database.windows.net",
+			"database": "db_ganesh",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "admin-ganesh",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEIzNUJFOEQ4LTIzNkUtNDYyRi1CNEY2LTYwOTdEMkY5MjExMl9iNDVlMGJiNi0wODYwLTQ4MmQtYWQ4NC0xZjZjYjliMjkwZjMiDQp9"
+		}
+	}
+}

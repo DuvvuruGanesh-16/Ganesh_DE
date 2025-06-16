@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText8",
+	"name": "DelimitedText24",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "lnk_adls",
@@ -19,7 +19,7 @@
 					"value": "@dataset().x",
 					"type": "Expression"
 				},
-				"folderPath": "personfiles",
+				"folderPath": "person files 1",
 				"fileSystem": "ganesh-container-123"
 			},
 			"columnDelimiter": "|",
@@ -27,12 +27,7 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"name": "BusinessEntityID|AddressID|AddressTypeID|rowguid|ModifiedDate",
-				"type": "String"
-			}
-		]
+		"schema": []
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }

@@ -1,12 +1,12 @@
 {
-	"name": "DelimitedText8",
+	"name": "DelimitedText38",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "lnk_adls",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"x": {
+			"X": {
 				"type": "string"
 			}
 		},
@@ -16,7 +16,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@dataset().x",
+					"value": "@dataset().X",
 					"type": "Expression"
 				},
 				"folderPath": "personfiles",

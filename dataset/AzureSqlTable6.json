@@ -2,12 +2,46 @@
 	"name": "AzureSqlTable6",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "lmk_azuresql",
+			"referenceName": "lnk_keyvault_azuresql",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
-		"schema": []
+		"schema": [
+			{
+				"name": "BusinessEntityID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DepartmentID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ShiftID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "StartDate",
+				"type": "date"
+			},
+			{
+				"name": "EndDate",
+				"type": "date"
+			},
+			{
+				"name": "ModifiedDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "HumanResources_EmployeeDepartmentHistory"
+		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }

@@ -1,12 +1,12 @@
 {
-	"name": "DelimitedText8",
+	"name": "DelimitedText25",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "lnk_adls",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"x": {
+			"filename": {
 				"type": "string"
 			}
 		},
@@ -16,23 +16,18 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@dataset().x",
+					"value": "@dataset().filename",
 					"type": "Expression"
 				},
 				"folderPath": "personfiles",
 				"fileSystem": "ganesh-container-123"
 			},
-			"columnDelimiter": "|",
+			"columnDelimiter": ",",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"name": "BusinessEntityID|AddressID|AddressTypeID|rowguid|ModifiedDate",
-				"type": "String"
-			}
-		]
+		"schema": []
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }

@@ -2,7 +2,7 @@
 	"name": "AzureSqlTable10",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "lmk_azuresql",
+			"referenceName": "lnk_azuresql",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {

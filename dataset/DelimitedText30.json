@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText8",
+	"name": "DelimitedText30",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "lnk_adls",
@@ -27,12 +27,7 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"name": "BusinessEntityID|AddressID|AddressTypeID|rowguid|ModifiedDate",
-				"type": "String"
-			}
-		]
+		"schema": []
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }

@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText8",
+	"name": "DelimitedText36",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "lnk_adls",
@@ -22,7 +22,7 @@
 				"folderPath": "personfiles",
 				"fileSystem": "ganesh-container-123"
 			},
-			"columnDelimiter": "|",
+			"columnDelimiter": ",",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""

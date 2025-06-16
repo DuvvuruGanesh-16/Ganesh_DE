@@ -1,12 +1,12 @@
 {
-	"name": "DelimitedText8",
+	"name": "DelimitedText37",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "lnk_adls",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"x": {
+			"Y": {
 				"type": "string"
 			}
 		},
@@ -16,13 +16,13 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@dataset().x",
+					"value": "@dataset().Y",
 					"type": "Expression"
 				},
-				"folderPath": "personfiles",
+				"folderPath": "person files 1",
 				"fileSystem": "ganesh-container-123"
 			},
-			"columnDelimiter": "|",
+			"columnDelimiter": ",",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
